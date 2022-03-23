@@ -9,8 +9,8 @@ int main()
     int num;
     cin>>num;
     if (num%2==0 || num==0){
-        cout<<"The number is even."<<endl;
+        cout<<num<<" is even."<<endl;
     }
-    else cout<<"The number is odd."<<endl;
+    else cout<<num<<" is odd."<<endl;
 return 0;
 }
