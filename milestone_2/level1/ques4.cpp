@@ -16,7 +16,7 @@ int main()
     cout<<"Enter the number of years of service:"<<endl;
     cin>>year;
     if (year>5){
-        bonus = (salary*year) + ((salary*year)*(5/100));
+        bonus = (salary*year) + ((salary*year)*(0.05));
 
     } else{
         bonus = (salary*year);

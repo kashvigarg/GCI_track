@@ -12,8 +12,9 @@ using namespace std;
 int main()
 {
     int num;
+    cout<<"Enter a number:";
     cin>>num;
-    cout<<abs(num)<<endl;
+    cout<<"The absolute of "<<num<<" is "<<abs(num)<<endl;
     
 return 0;
 }

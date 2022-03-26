@@ -14,8 +14,9 @@ int main()
     int quantity,cost;
     cout<<"Enter quantity of purchased item:";
     cin>>quantity;
+    
     if (quantity>1000){
-        cost = (quantity * 100)-((quantity * 100) * (10/100));
+        cost = (quantity * 100)-(quantity * 100 * 0.1);
 
     } else {
         cost = (quantity * 100);
