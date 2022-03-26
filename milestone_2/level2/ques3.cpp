@@ -18,4 +18,6 @@ int main()
         rev_num += (n * pow(10, (4 - i)));
     }
     cout << "The reversed number is: " << rev_num << endl;
+
+    return 0;
 }

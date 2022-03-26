@@ -24,11 +24,15 @@ int main()
         cout << "She will work only in urban areas." << endl;
         }
     else if (((gender == 'M')||(gender=='m')) && (age >= 20 || age < 40))
-        cout << "He may work anywhere." << endl;
+        {cout << "He may work anywhere." << endl;}
 
     else if (((gender == 'M')||(gender=='m')) && (age >= 40 || age <= 60))
-        cout << "He may work in urban areas only." << endl;
+        
+        {cout << "He may work in urban areas only." << endl;}
 
     else
-        cout << "ERROR" << endl;
+        {cout << "ERROR" << endl;}
+
+
+        return 0; 
 }
