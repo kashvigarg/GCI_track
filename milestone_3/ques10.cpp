@@ -5,18 +5,17 @@
 using namespace std;
 int main()
 {
-    int i = 1, n, num,num1, j = 0;
-    cout << "Enter any number:" << endl;
-    cin >> num;
+    int num,cnt,num1;
+    cout<<"Enter the number:"<<endl;
+    cin>>num;
     num1=num;
-    while (1)
-    {
-        num = num / 10;
-        j++;
-        if (num == 0)
-            break;
+
+    while (num>=10){
+        num=num/10;
+        cnt+=1;
     }
-    cout << num1 << " is a " << j << " digit number" << endl;
+
+    cout << num1 << " is a " << (cnt+1) << " digit number" << endl;
 
     return 0;
 }

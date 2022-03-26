@@ -5,24 +5,19 @@ using namespace std;
 
 int main()
 {
-    int num, num1, i, first, last;
-    cout << "Enter any number:" << endl;
-    cin >> num;
-    if (num > 9)
-    {
-        last = (num % 10);
-        while (1)
-        {
-            num1 = num;
-            num = num / 10;
-            if (num == 0)
-            {
-                cout << "The first digit is " << num1 << endl;
-                break;
-            }
-        }
-        cout << "The last digit is " << last << endl;
+    int num, i, first_digit, last_digit;
+    cout<<"Enter a number:"<<endl;
+    cin>>num;
+    last_digit=num%10;
+    first_digit=num;
+    while (first_digit>=10){
+        first_digit=first_digit/10;
     }
-    else
-        cout << "You have entered a single digit number" << endl;
+    
+    
+    cout<<"The sum of the first and last digit of the number is: "<<first_digit+last_digit<<endl;
+    
+    
+    return 0;
 }
+
