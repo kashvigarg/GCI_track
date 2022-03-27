@@ -14,6 +14,7 @@ int main()
     for (int j=1;j<=n;j++){
         for (int i=2;i<=(n/2);i++){
         if ((j%i)!=0){
+            
             cout<<j<<endl;
             
         }

@@ -5,6 +5,16 @@ using namespace std;
 #include <string>
 #include <cmath>
    
+
+
+
+
+
+
+
+
+
+   // -------------- to be worked on -----------
 int main()
 {
     int num;
@@ -14,7 +24,8 @@ int main()
     cin>>num;
 
     for (int i=num; num>0; num=num/10){
-        
+        i=i%10;
+
     }
 
 return 0;
