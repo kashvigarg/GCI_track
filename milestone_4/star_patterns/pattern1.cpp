@@ -2,6 +2,12 @@
 using namespace std;
 #include <string>
 #include <cmath>
+
+/* pattern type -
+|\
+| \
+|  \
+*/
    
 int main()
 {
