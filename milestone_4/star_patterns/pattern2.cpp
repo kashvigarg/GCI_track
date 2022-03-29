@@ -10,25 +10,27 @@ using namespace std;
  /   |   
 */
 
+string repeat(string s1, int n){
+    string s=s1;
+    for (int i=0; i<n;i++){
+        s+=s1;
+        //s1+=s1;
+    }
+
+    return s;
+
+}
 
 int main()
 {
     int n;
-    string s=" ";
-    string s2="*";
     cout<<"Enter the number of lines for the pattern:"<<endl;
     cin>>n;
-    for (int i=1;i<=n;i++){
-        for (int j=1; j<=i;j++){
-            for (int k=1; k<=(n-j);k++){
-                cout<<" ";
-            }
-            for (int p=1; p<=j;p++){
-                cout<<"*";
-            }
-        }
-        cout<<endl;
+    
+    for (int i=0;i<n;i++){
+        cout<<repeat(" ",(n-i)-1)<<repeat("*",i)<<endl;
     }
+    
 
 return 0;
 }
