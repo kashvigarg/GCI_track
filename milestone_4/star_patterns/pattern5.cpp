@@ -4,21 +4,13 @@ using namespace std;
 #include <cmath>
 
 /* pattern type -
-|  /
-| /  
-|/   
+   *
+  ***
+ ***** 
+*******
 */
 
-string repeat(string s1, int n){
-    string s=s1;
-    for (int i=0; i<n;i++){
-        s+=s1;
-        //s1+=s1;
-    }
 
-    return s;
-
-}
 
 int main()
 {
@@ -26,8 +18,14 @@ int main()
     cout<<"Enter the number of lines for the pattern:"<<endl;
     cin>>n;
     
-    for (int i=0;i<(n+1);i++){
-        cout<<repeat("*",(2*i)-1)<<endl;
+    for (int i=1; i<=n;i++){
+        for (int j=0; j<(n-i);j++){
+            cout<<" ";
+        }
+        for (int p=0; p<(2*i-1);p++){
+            cout<<"*";
+        }
+        cout<<endl;
     }
     
 

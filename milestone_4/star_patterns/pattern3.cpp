@@ -9,16 +9,6 @@ using namespace std;
   \|   
 */
 
-string repeat(string s1, int n){
-    string s=s1;
-    for (int i=0; i<n;i++){
-        s+=s1;
-        //s1+=s1;
-    }
-
-    return s;
-
-}
 
 int main()
 {
@@ -26,8 +16,14 @@ int main()
     cout<<"Enter the number of lines for the pattern:"<<endl;
     cin>>n;
     
-    for (int i=0;i<n;i++){
-        cout<<repeat(" ",i)<<repeat("*",(n-i)-1)<<endl;
+    for (int i=n;i>0;i--){
+        for (int j=0; j<(n-i);j++){
+            cout<<" ";
+        }
+        for (int p=0; p<i;p++){
+            cout<<"*";
+        }
+        cout<<endl;
     }
     
 

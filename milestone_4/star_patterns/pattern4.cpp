@@ -9,16 +9,6 @@ using namespace std;
 |/   
 */
 
-string repeat(string s1, int n){
-    string s=s1;
-    for (int i=0; i<n;i++){
-        s+=s1;
-        //s1+=s1;
-    }
-
-    return s;
-
-}
 
 int main()
 {
@@ -27,7 +17,10 @@ int main()
     cin>>n;
     
     for (int i=n;i>0;i--){
-        cout<<repeat("*",i-1)<<endl;
+        for (int j=0; j<i; j++){
+            cout<<"*";
+        }
+        cout<<endl;
     }
     
 
