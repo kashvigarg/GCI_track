@@ -1,2 +1,2 @@
 # GCI_track
- beginner track (DSA in CPP)
+ Beginner Track (DSA in CPP)
