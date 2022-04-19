@@ -3,6 +3,11 @@ using namespace std;
 #include <string>
 #include <cmath>
 
+// 1. outer loop
+// 2. inner loop
+// 3. print
+
+
 /* pattern type -
 |\
 | \
