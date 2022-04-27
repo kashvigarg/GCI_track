@@ -10,17 +10,26 @@ using namespace std;
    
 int main()
 {
-    int num;
+    int num, prime, rem;
+    int i=1;
     cout<<"Enter the number: "<<endl;
     cin>>num;
-    for (int i =1; i<=num; i++){
-        if (i%num ==0){
-            for (int j=0; j<i; j++){
-                if (j%i==0) continue;
-                else cout<<j<<endl;
-
-            }
+    for (i; i<=num; i++){
+        rem=0;
+        if (num%i==0){
+            rem=1;
+            break;
+            
+        }}
+        if (rem==0){
+            prime=i;
         }
-    }
+
+        
+
+
+    
+
+    cout<<prime;
 return 0;
 }
