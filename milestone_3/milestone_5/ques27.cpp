@@ -11,16 +11,18 @@ int main()
     cout<<"Enter the value of n:"<<endl;
     cin>>n;
     cout<<"The prime numbers between 1 and "<< n<<" are: "<<endl<<endl;
-    for (int j=1;j<=n;j++){
+    for (int j=2;j<n;j++){
         for (int i=2;i<=(n/2);i++){
-        if ((j%i)!=0){
+        
+     if ((j%i)==0){
             
-            cout<<j<<endl;
+            break;
             
         }
+        
         else {
             
-            continue;
+            cout<<j<<endl;
         }
     }
 

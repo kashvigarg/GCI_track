@@ -13,25 +13,36 @@ AB       JK
 A         K
 
 
+to make:
+ABCDCBA
+ABC CBA
+AB   BA
+A     A
+
+1234321
+123 321
+12   21
+1     1
 
 */
+
 int main()
 {
     int n;
     cout<<"Enter no of lines for pattern:"<<endl;
     cin>>n;
-    int r =1;
+    
     for (int i=1;i<=(n);i++){
         
         for (int j=1; j<=(2*n-1);j++){
-            if ((j<=(n+1)-i)){
+            if ((j<(n+1)-i)){
                 cout<<j;
 
             }
             else if ((j>=(n-1)+i)){
                 
-                cout<<abs(j-2*r);
-                r++;
+                cout<<j;
+               
             }
             else{
                 cout<<" ";
