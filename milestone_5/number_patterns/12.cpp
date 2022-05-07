@@ -5,6 +5,7 @@
 21
 1
 */
+//tough 
 
 #include <iostream>
 using namespace std;
@@ -13,12 +14,16 @@ using namespace std;
    
 int main()
 {
-    int n;
+    int n,a;
     cout<<"Enter the number of rows:"<<endl;
     cin>>n;
-    for (int i=1; i<=n; i++){
-        for (int j=1 ;j<=2*n-i; j++){
-            cout<<j;
+    for (int i=n; i>=1; i--){
+        if (i%2==1) a=1;
+        else a=i;
+        for (int j=1; j<=i; j++){
+            cout<<a;
+            if (i%2==1) a++;
+            else a--;
         }
         cout<<endl;
     }

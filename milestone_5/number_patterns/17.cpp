@@ -13,12 +13,16 @@ using namespace std;
    
 int main()
 {
-    int n;
+    int n,k;
     cout<<"Enter the number of rows:"<<endl;
     cin>>n;
     for (int i=1; i<=n; i++){
-        for (int j=1 ;j<=2*n-i; j++){
-            cout<<j;
+        if (i%2==0) k=2;
+        else k=1;
+        
+        for (int j=1 ;j<=i; j++){
+            cout<<k;
+            k=k+2;
         }
         cout<<endl;
     }
