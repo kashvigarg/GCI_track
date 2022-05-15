@@ -7,18 +7,22 @@ using namespace std;
 #include <string>
 #include <cmath>
 
-int voter(int num1){
-    if (num1>=18) cout<<"You can vote."<<endl;
-    else cout<<"You can vote after you're 18 years old."<<endl;
-    return 0;
+void prime(int num1){
+    int mark=0;
+    for (int i=2; i*i<num1; i++){
+        if (num1%i==0) {
+            mark+=1;
+    }}
+    if (mark==1) cout<<"Prime"<<endl;
+    else cout<<"Not Prime"<<endl;
 }
 
 int main(){
     int a;
-    cout<<"Enter age:"<<endl;
+    cout<<"Enter number:"<<endl;
     cin>>a;
     
-    voter(a);
+    prime(a);
 
     return 0;
 

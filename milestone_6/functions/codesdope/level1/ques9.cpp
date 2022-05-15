@@ -7,3 +7,23 @@ Factorial of any number n is represented by n! and is equal to 1*2*3*....*(n-1)*
 Also,
 1! = 1
 0! = 0*/
+
+#include <iostream>
+using namespace std;
+
+int factorial(int n){
+    int fac=1;
+    for (int i=1; i<=n; i++){
+        fac*=i;
+    }
+    return fac;
+}
+
+int main(){
+    int n;
+    cout<<"Enter a number: "<<endl;
+    cin>>n;
+    cout<<"The factorial of "<<n<<" is "<<factorial(n)<<endl;
+    return 0;
+}
+
