@@ -1,0 +1,3 @@
+/*
+Define a function to print the prime factors of a number.
+*/

@@ -1,0 +1,2 @@
+/*Write a C program to print all Armstrong numbers between given interval using functions.
+*/

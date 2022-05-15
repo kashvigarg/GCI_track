@@ -1,0 +1,3 @@
+/* 
+Write a C program to find all prime numbers between given interval using functions.
+*/
