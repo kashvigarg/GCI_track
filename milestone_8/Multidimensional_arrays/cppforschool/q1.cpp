@@ -18,7 +18,7 @@ using namespace std;
 #include <cmath>
 
 int m, n;
-int *arr;
+int* arr= new int[m*n];
 
 void Input(int *arr, int m, int n);
 void Display(int *arr, int m, int n);
@@ -50,14 +50,8 @@ switchcases:
         cin >> m;
         cout << "How many columns?";
         cin >> n;
-        int *arr = new int[m * n];
-        for (int i = 1; i <= m; i++)
-        {
-            for (int j = 1; j <= n; j++)
-            {
-                cin >> arr[i * j];
-            }
-        }
+        
+        Input(arr, m , n);
         break;
     }
 
@@ -103,8 +97,15 @@ switchcases:
         goto switchcases;
 }
 
-void Input(int *arr, int m, int n)
+void Input(int arr, int m, int n)
 {
+    for (int i = 1; i <= m; i++)
+        {
+            for (int j = 1; j <= n; j++)
+            {
+                cin >> i;
+            }
+        }
 }
 
 void Display(int *arr, int m, int n)
