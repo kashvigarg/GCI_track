@@ -4,27 +4,28 @@ using namespace std;
 #include <cmath>
 
 // no of times it has been rotated is the index of min element
-int rotations (int arr[], int size) {
+int minIndex (int arr[], int size) {
     int start = 0; 
     int end = size-1;
-    int res = -1;
     while (start <=end){
         int mid = start +(end- start)/2;
-        if ((arr[mid]<arr[mid+1])&&(arr[mid]<arr[mid-1])){
-            res = mid;
+        int prev = (mid - 1 + size)%size;
+        int next = (mid+1)%size;
+        if ((arr[mid]<=arr[prev])&&(arr[mid]<=arr[next])){
+            return mid;
         }
-        else if (arr[mid]>arr[mid-1]){
+        else if (arr[mid]>arr[start]){
             start = mid +1;
         }
-        else if (arr[mid]<arr[mid-1]){
+        else if (arr[mid]<arr[end]){
             end = mid - 1;
         }
     }
-    return res;
+    return -1;
 } 
 int main()
 {
     int arr[]={5, 7, 9, 1 , 2, 3};
-    cout<<rotations(arr, 6)<<endl;
+    
 return 0;
 }
