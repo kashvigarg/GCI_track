@@ -14,10 +14,10 @@ int rotations (int arr[], int size) {
         if ((arr[mid]<=arr[prev])&&(arr[mid]<=arr[next])){
             return mid;
         }
-        else if (arr[mid]>arr[start]){
+        else if (arr[mid]>arr[0]){
             start = mid +1;
         }
-        else if (arr[mid]<arr[end]){
+        else if (arr[mid]<arr[size-1]){
             end = mid - 1;
         }
     }
